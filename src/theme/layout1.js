@@ -3,6 +3,7 @@ import UsageBoxes from '../Components2/UsageBoxes';
 import '../App.css';
 
 function Layout1() {
+
   return (
     <div className="body bg-[#252525] text-white">
       <div className='cont'>
