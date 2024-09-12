@@ -1,25 +1,49 @@
 import DescriptionBox from '../Components1/DescriptionBox';
 import UsageBoxes from '../Components1/UsageBoxes';
 import '../App.css';
+import { useEffect, useState } from 'react';
 function Layout3() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleMenuClick = () => {
+    setIsMenuOpen(!isMenuOpen); // toggle menu on click
+  };
+
+  const handleOutsideClick = (e) => {
+    // If the click is outside the menu, close it
+    if (!e.target.closest('.nav')) {
+      setIsMenuOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    // Add event listener to detect clicks outside the menu
+    document.addEventListener('click', handleOutsideClick);
+
+    return () => {
+      document.removeEventListener('click', handleOutsideClick);
+    };
+  }, []);
+
   return (
     <div className="body bg-[#0d67a5] text-black">
-      <div className='cont'>
-
-        {/* //////////////////////////////////////////////////////////////////// */}
-        <div className='navbar p-6'>
-          <div className='nav flex justify-between items-center'>
-            <button className='logo'><img src='./logo.jpeg' /></button>
-            <details className='relative md'>
-              <summary className='list h-[20px] w-[20px]'>
-                <img src='./bars.svg' className='h-full w-full' />
-              </summary>
-              <ul className='absolute p-[3px] bg-white right-[20%] [&>*]:py-2 [&>*]:px-12 [&>*]:cursor-pointer hover:[&>*]:bg-[#e2e2e2] [&>*]:font-semibold rounded'>
-                <li className=''>About<span className='pl-1'>us</span></li>
-                <li className=''>FAQs</li>
-                <li>Contact</li>
-              </ul>
-            </details>
+      <div className="cont">
+        {/* Navbar */}
+        <div className="navbar p-6">
+          <div className="nav flex justify-between items-center">
+            <button className="logo"><img src="./logo.jpeg" alt="Logo" /></button>
+            <div className="relative text-[black]">
+              <button onClick={handleMenuClick} className="list h-[20px] w-[20px]">
+                <img src="./bars.svg" className="h-full w-full" alt="Menu" />
+              </button>
+              {isMenuOpen && (
+                <ul className="absolute p-[3px] bg-[#0d67a5] right-[20%] [&>*]:py-2 [&>*]:px-12 [&>*]:cursor-pointer hover:[&>*]:bg-[#e2e2e2] [&>*]:font-semibold rounded">
+                  <li onClick={() => window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })}>About<span className="pl-1">us</span></li>
+                  <li onClick={() => window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })}>FAQs</li>
+                  <li onClick={() => window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })}>Contact</li>
+                </ul>
+              )}
+            </div>
           </div>
         </div>
 
@@ -67,12 +91,12 @@ function Layout3() {
                 <img src='./envelope.svg' className='w-[15px]' /><label>madinaIndustries@gmail.com</label>
               </div>
               <div className=''>
-                <img src='./location.svg' className='w-[15px]' /><label>karachi industries</label>
+                <img src='./location.svg' className='w-[15px]' /><label>Kasur industries</label>
               </div>
             </div>
             <div className='foot-section3 flex flex-col items-center'>
               <h4 className='font-medium'>About Company</h4>
-              <h6 className='text-[13px] text-center'>Madina Chemical Industries Situated In Karachi is the best chemical industry in pakistan</h6>
+              <h6 className='text-[13px] text-center'>Madina Chemical Industries Situated In Kasur is the best chemical industry in pakistan</h6>
               <div className='flex justify-between pt-3 w-[260px] [&>*]:w-[30px]'>
                 <img src='./instagram.svg' />
                 <img src='./facebook.svg' />
