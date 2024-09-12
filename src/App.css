@@ -67,7 +67,7 @@ bg-[#e2e2e2]
   background: linear-gradient(to right, #232323,transparent,#232323);
 }
 .usageBox,.descriptionBox{
-  /* animation: appear linear; */
+  animation: appear linear;
   opacity: 0;
   transform: scale(0);
   animation-timeline: view();
