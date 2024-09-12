@@ -23,8 +23,6 @@ function Layout1() {
             </details>
           </div>
         </div>
-
-        {/* //////////////////////////////////////////////////////////////////////////// */}
         <div className='text-center pt-12 pb-6 text-[24px] font-bold'><h1>FEATURED PRODUCT</h1></div>
         <div className='pt-24 pb-2 max-w-[95%] min-w-[300px] m-auto grid grid-cols-[repeat(auto-fit,minmax(300px,45%))] justify-center gap-6 rounded-t-xl -bg-[#ececec] bg-[#343434] px-6'>
           <div>
@@ -52,7 +50,6 @@ function Layout1() {
              <UsageBoxes label={4} usage={'wash it with high pressure water'}/>
              <UsageBoxes label={5} usage={'Fix silencer and gradually increase the acceletor to 2000 RPM for 2 to 3 minutes'}/>
         </div>
-        {/* ///////////////////////////////////////////////////////////////////////////////// */}
         <div className='footer pt-[3px] text-white'>
           <div className='footer-cont p-[10%] py-8 bg-[#343434] grid gap-8 justify-center items-center grid-cols-1 md:grid-cols-[repeat(3,1fr)]'>
             <div className='foot-section1 w-full -bg-red-50 flex justify-center'>
