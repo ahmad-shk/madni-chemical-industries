@@ -47,7 +47,7 @@ function Layout4() {
           </div>
         </div>
         {/* //////////////////////////////////////////////////////////////////////////// */}
-        <div className='text-center pt-12 pb-6 text-[24px] text-[#0d67a5] font-bold'><h1>FEATURED PRODUCT</h1></div>
+        <div className='text-center pt-12 pb-6 text-[24px] text-[#000] font-bold'><h1>FEATURED PRODUCT</h1></div>
         <div className='pt-24 pb-2 max-w-[95%] min-w-[300px] m-auto grid grid-cols-[repeat(auto-fit,minmax(300px,45%))] justify-center gap-6 rounded-t-xl -bg-[#ececec] bg-[#0d67a5] px-6'>
           <div>
             <div className='border border-[#c9c9c9] flex justify-center items-center relative bottle-cont rounded-lg'><img src='./posterLogo.jpeg' className='absolute h-full w-full bottle-bg' /><img src='./bottle.svg' className='bottle' /></div>

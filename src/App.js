@@ -11,10 +11,10 @@ function App() {
     <div className='px-12 py-6 bg-[#383838] '>
       <h1 className='text-white text-center text-[28px] font-bold'>CLICK TO CHANGE THEME</h1>
       <div className='flex flex-wrap gap-8 justify-center pt-6'>
-    <button onClick={()=>{setCount(1)}} className='endure-btn border bg-white px-4 py-2 rounded-full'>Layout 1</button>
-    <button onClick={()=>{setCount(2)}} className='endure-btn border bg-white px-4 py-2 rounded-full'>Layout 2</button>
-    <button onClick={()=>{setCount(3)}} className='endure-btn border bg-white px-4 py-2 rounded-full'>Layout 3</button>
-    <button onClick={()=>{setCount(4)}} className='endure-btn border bg-white px-4 py-2 rounded-full'>Layout 4</button>
+    {/* <button onClick={()=>{setCount(1)}} className='endure-btn border bg-white px-4 py-2 rounded-full'>Layout 1</button> */}
+    <button onClick={()=>{setCount(2)}} className='endure-btn border bg-white px-4 py-2 rounded-full'>Layout 1</button>
+    {/* <button onClick={()=>{setCount(3)}} className='endure-btn border bg-white px-4 py-2 rounded-full'>Layout 3</button> */}
+    <button onClick={()=>{setCount(4)}} className='endure-btn border bg-white px-4 py-2 rounded-full'>Layout 2</button>
     </div>
     </div>
     {count===1&&<Layout1/> }
