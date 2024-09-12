@@ -65,12 +65,12 @@ function Layout1() {
                 <img src='./envelope.svg' className='w-[15px]' /><label>madinaIndustries@gmail.com</label>
               </div>
               <div className=''>
-                <img src='./location.svg' className='w-[15px]' /><label>karachi industries</label>
+                <img src='./location.svg' className='w-[15px]' /><label>Kasur industries</label>
               </div>
             </div>
             <div className='foot-section3 flex flex-col items-center'>
               <h4 className='font-medium'>About Company</h4>
-              <h6 className='text-[13px] text-center'>Madina Chemical Industries Situated In Karachi is the best chemical industry in pakistan</h6>
+              <h6 className='text-[13px] text-center'>Madina Chemical Industries Situated In Kasur is the best chemical industry in pakistan</h6>
               <div className='flex justify-between pt-3 w-[260px] [&>*]:w-[30px]'>
                 <img src='./instagram.svg' />
                 <img src='./facebook.svg' />
