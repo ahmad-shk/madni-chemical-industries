@@ -3,7 +3,7 @@ import DescriptionBoxSmall from '../Components/DescriptionBoxSmall';
 import { useState, useEffect } from 'react';
 import UsageBoxes from '../Components/UsageBoxes';
 import '../App.css';
-function Layout({color}) {
+function Layout({backgroundColor,foregroundColor}) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleMenuClick = () => {
@@ -27,7 +27,7 @@ function Layout({color}) {
   }, []);
 
   return (
-    <div className={`"body ${color} text-white"`}>
+    <div className={`"body ${backgroundColor} text-white"`}>
       <div className="cont">
         {/* Navbar */}
         <div className="navbar p-6">
@@ -49,7 +49,7 @@ function Layout({color}) {
         </div>
         {/* //////////////////////////////////////////////////////////////////////////// */}
         <div className='text-center pt-12 pb-6 text-[24px] text-[#0d67a5] font-bold'><h1>FEATURED PRODUCT</h1></div>
-        <div className='pt-24 pb-2 max-w-[95%] min-w-[300px] m-auto grid md:grid-cols-[repeat(auto-fit,minmax(300px,45%))] justify-center gap-6 rounded-t-xl -bg-[#ececec] bg-[#0d67a5] px-6'>
+        <div className={`pt-24 pb-2 max-w-[95%] min-w-[300px] m-auto grid md:grid-cols-[repeat(auto-fit,minmax(300px,45%))] justify-center gap-6 rounded-t-xl -bg-[#ececec] ${foregroundColor} px-6`}>
           <div>
             <div className='border border-[#c9c9c9] flex justify-center items-center relative bottle-cont rounded-lg'><img src='./posterLogo.jpeg' className='absolute h-full w-full bottle-bg' /><img src='./bottle.svg' className='bottle' /></div>
             <h1 className='text-center text-[16px] font-semibold py-6 name'>Catagaurd Converter Cleaner</h1>
