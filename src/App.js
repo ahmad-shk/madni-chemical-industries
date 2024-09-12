@@ -5,7 +5,7 @@ import Layout2 from './theme/layout2'
 import Layout3 from './theme/layout3'
 import Layout4 from './theme/layout4';
 function App() {
-  const [count,setCount]=useState(1)
+  const [count,setCount]=useState(2)
   return (
     <>
     <div className='px-12 py-6 bg-[#383838] '>
