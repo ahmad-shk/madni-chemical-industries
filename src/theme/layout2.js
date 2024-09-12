@@ -56,13 +56,14 @@ function Layout2() {
             <img src='./bgImage1.png' className='mt-4 rounded-lg descriptionBox' />
           </div>
 
-          <div className='flex flex-col justify-between'>
-            <DescriptionBox label={'EMISSION'} description={'Reduces the vehicles harmful emission'} />
+          <div className='grid grid-cols-2 md:grid-cols-2 gap-2'>
+            <DescriptionBox label={'EMISSION'} description={'Reduces the vehicles harmful emission'} className='row-start-1'/>
             <DescriptionBox label={'POWER'} description={'Reduces the fuel consumption and increases power'} />
-            <DescriptionBox label={'CATALYTIC LIFE'} description={'Enhances the tendency of catalytic life'} />
+            <DescriptionBox label={'LIFE'} description={'Enhances the tendency of catalytic life'} />
             <DescriptionBox label={'RECOVERING'} description={'Recovers the activity of catalytic converter'} />
-            <DescriptionBox label={'QUICK CLEAN'} description={'Quickly cleans the harmful chemicals such as: Sulphur, Carbon Phosphorus from the surface of catalytic converter'} />
-            <img src='./bgImage2.png' className='rounded-lg descriptionBox' />
+            <DescriptionBox label={'QUICK CLEAN'} description={'Quickly cleans the harmful chemicals such as: Sulphur, Carbon Phosphorus from the surface of catalytic converter'}  className='col-start-1 col-end-3'/>
+            <DescriptionBox label={'QUICK CLEAN'} description={'Quickly cleans the harmful chemicals such as: Sulphur, Carbon Phosphorus from the surface of catalytic converter'}  className='col-start-1 col-end-3'/>
+            <img src='./bgImage2.png' className='rounded-lg descriptionBox col-start-1 col-end-3' />
           </div>
         </div>
 
