@@ -33,12 +33,12 @@ function Layout1() {
         <div className="navbar p-6">
           <div className="nav flex justify-between items-center">
             <button className="logo flex justify-center items-center border-2 border-[#9e9e9e]"><img src="./logo.jpeg" alt="Logo" /></button>
-            <div className="relative text-[black]">
+            <div className="relative text-[white]">
               <button onClick={handleMenuClick} className="list h-[20px] w-[20px]">
                 <img src="./bars.svg" className="h-full w-full" alt="Menu" />
               </button>
               {isMenuOpen && (
-                <ul className="absolute p-[3px] bg-[#0d67a5] right-[20%] [&>*]:py-2 [&>*]:px-12 [&>*]:cursor-pointer hover:[&>*]:bg-[#e2e2e2] [&>*]:font-semibold rounded">
+                <ul className="absolute p-[3px] bg-[#343434] right-[20%] [&>*]:py-2 [&>*]:px-12 [&>*]:cursor-pointer hover:[&>*]:bg-[#252525] [&>*]:font-semibold rounded">
                 <li onClick={() => window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })}>About<span className="pl-1">us</span></li>
                   <li onClick={() => window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })}>FAQs</li>
                   <li onClick={() => window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })}>Contact</li>

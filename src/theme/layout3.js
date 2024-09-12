@@ -37,7 +37,7 @@ function Layout3() {
                 <img src="./bars.svg" className="h-full w-full" alt="Menu" />
               </button>
               {isMenuOpen && (
-                <ul className="absolute p-[3px] bg-[#0d67a5] right-[20%] [&>*]:py-2 [&>*]:px-12 [&>*]:cursor-pointer hover:[&>*]:bg-[#e2e2e2] [&>*]:font-semibold rounded">
+                <ul className="absolute p-[3px] bg-[#c9c9c9] right-[20%] [&>*]:py-2 [&>*]:px-12 [&>*]:cursor-pointer hover:[&>*]:bg-[#0d67a5] [&>*]:font-semibold rounded">
                   <li onClick={() => window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })}>About<span className="pl-1">us</span></li>
                   <li onClick={() => window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })}>FAQs</li>
                   <li onClick={() => window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })}>Contact</li>
