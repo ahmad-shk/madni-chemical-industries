@@ -67,23 +67,11 @@ bg-[#e2e2e2]
   background: linear-gradient(to right, #232323,transparent,#232323);
 }
 .usageBox,.descriptionBox{
-<<<<<<< HEAD
-  animation: appear linear;
-  opacity: 0;
-  transform: scale(0);
-  /* animation-timeline: view();
-  animation-range: entery 0% cover 10%; */
-}
-.descriptionBox.visible{
-  opacity: 1;
-  transform: scale(1);
-=======
   /* animation: appear linear; */
   /* opacity: 0;
   transform: scale(0); */
   /* animation-timeline: view(); */
   /* animation-range: entery 0% cover 10%; */
->>>>>>> eb6744bd38e205af2498b566b0879ab9dcd0268f
 }
 
 /* @keyframes appear{
