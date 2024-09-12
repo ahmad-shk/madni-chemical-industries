@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* 
+variables
+bg-[#e2e2e2]
+*/
+.list{
+  list-style: none;
+  color: #e2e2e2;
+}
+.endure-btn{
+  box-shadow: 3px -3px 8px rgb(0, 0, 0);
+  transition: .2s;
+  &:active{
+    box-shadow: none;
+    transform: scale(.95);
+    background-color: #cacaca;
+  }
+}
+.bottle-cont{
+  
+}
+.bottle-bg{
+  mix-blend-mode:screen;
+}
+.bottle{
+  filter: drop-shadow(2px 5px 5px gray);
+  transition: .2s;
+  &:hover{
+    filter: none;
+    transform: scale(1.2) rotate(30deg);
+  }
+}
+.logo{
+  height: 50px;
+  width: 80px;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.name{
+  font-family: monospace; 
+  overflow: hidden;      
+  border-right: 2px solid black; 
+  white-space: nowrap;    
+  margin: 0 auto;         
+  letter-spacing: 2px;    
+  animation: typing 8s steps(40, end) 1s infinite, blink 0.75s step-end infinite;
+}
+@keyframes typing {
+  0% { width: 0; }        
+  50% { width: 100%; }     
+  70% { width: 100%; }     
+  100% { width: 0; }       
+}
+@keyframes blink {
+  from, to { border-color: transparent; }
+  50% { border-color: black; }
+}
+.motor{
+  transition: 1s ease-in-out;
+  &:hover{
+    transform: rotate(720deg);
+  }
+}
+.footer{
+  background: linear-gradient(to right, #232323,transparent,#232323);
+}
+.usageBox,.descriptionBox{
+  animation: appear linear;
+  opacity: 0;
+  transform: scale(0);
+  animation-timeline: view();
+  animation-range: entery 0% cover 10%;
+}
+
+@keyframes appear{
+  0%{
+  
+  }
+  30%{
+    opacity: 1;
+    transform: scale(1);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
