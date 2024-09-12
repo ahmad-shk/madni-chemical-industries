@@ -57,11 +57,11 @@ function Layout2() {
           </div>
 
           <div className='flex flex-col justify-between'>
-            <DescriptionBox label={'QUICK CLEAN'} description={'Quickly cleans the harmful chemicals such as: Sulphur, Carbon Phosphorus from the surface of catalytic converter'} />
-            <DescriptionBox label={'RECOVERING'} description={'Recovers the activity of catalytic converter'} />
             <DescriptionBox label={'EMISSION'} description={'Reduces the vehicles harmful emission'} />
             <DescriptionBox label={'POWER'} description={'Reduces the fuel consumption and increases power'} />
             <DescriptionBox label={'CATALYTIC LIFE'} description={'Enhances the tendency of catalytic life'} />
+            <DescriptionBox label={'RECOVERING'} description={'Recovers the activity of catalytic converter'} />
+            <DescriptionBox label={'QUICK CLEAN'} description={'Quickly cleans the harmful chemicals such as: Sulphur, Carbon Phosphorus from the surface of catalytic converter'} />
             <img src='./bgImage2.png' className='rounded-lg descriptionBox' />
           </div>
         </div>
