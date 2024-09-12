@@ -6,7 +6,7 @@ export default function UsageBoxes({label,usage}) {
         <div className='motor px-4 py-2 rounded-full font-bold bg-[#0d67a5] text-white flex items-center justify-center'>
             {label}
         </div>
-        <div><p>{usage}</p></div>
+        <div><p className=' md:text-[24px] '>{usage}</p></div>
     </div>
   )
 }
