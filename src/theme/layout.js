@@ -1,8 +1,9 @@
+import DescriptionBox from '../Components/DescriptionBox';
+import DescriptionBoxSmall from '../Components/DescriptionBoxSmall';
+import { useState, useEffect } from 'react';
+import UsageBoxes from '../Components/UsageBoxes';
 import '../App.css';
-import { useEffect, useState } from 'react';
-import DescriptionBox from '../Components4/DescriptionBox';
-import UsageBoxes from '../Components4/UsageBoxes';
-function Layout4() {
+function Layout({color}) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleMenuClick = () => {
@@ -26,7 +27,7 @@ function Layout4() {
   }, []);
 
   return (
-    <div className="body bg-[white] text-white">
+    <div className={`"body ${color} text-white"`}>
       <div className="cont">
         {/* Navbar */}
         <div className="navbar p-6">
@@ -47,8 +48,8 @@ function Layout4() {
           </div>
         </div>
         {/* //////////////////////////////////////////////////////////////////////////// */}
-        <div className='text-center pt-12 pb-6 text-[24px] text-[#000] font-bold'><h1>FEATURED PRODUCT</h1></div>
-        <div className='pt-24 pb-2 max-w-[95%] min-w-[300px] m-auto grid grid-cols-[repeat(auto-fit,minmax(300px,45%))] justify-center gap-6 rounded-t-xl -bg-[#ececec] bg-[#0d67a5] px-6'>
+        <div className='text-center pt-12 pb-6 text-[24px] text-[#0d67a5] font-bold'><h1>FEATURED PRODUCT</h1></div>
+        <div className='pt-24 pb-2 max-w-[95%] min-w-[300px] m-auto grid md:grid-cols-[repeat(auto-fit,minmax(300px,45%))] justify-center gap-6 rounded-t-xl -bg-[#ececec] bg-[#0d67a5] px-6'>
           <div>
             <div className='border border-[#c9c9c9] flex justify-center items-center relative bottle-cont rounded-lg'><img src='./posterLogo.jpeg' className='absolute h-full w-full bottle-bg' /><img src='./bottle.svg' className='bottle' /></div>
             <h1 className='text-center text-[16px] font-semibold py-6 name'>Catagaurd Converter Cleaner</h1>
@@ -56,13 +57,24 @@ function Layout4() {
             <img src='./bgImage1.png' className='mt-4 rounded-lg descriptionBox' />
           </div>
 
-          <div className='flex flex-col justify-between'>
-            <DescriptionBox label={'QUICK CLEAN'} description={'Quickly cleans the harmful chemicals such as: Sulphur, Carbon Phosphorus from the surface of catalytic converter'} />
-            <DescriptionBox label={'RECOVERING'} description={'Recovers the activity of catalytic converter'} />
-            <DescriptionBox label={'EMISSION'} description={'Reduces the vehicles harmful emission'} />
-            <DescriptionBox label={'POWER'} description={'Reduces the fuel consumption and increases power'} />
-            <DescriptionBox label={'CATALYTIC LIFE'} description={'Enhances the tendency of catalytic life'} />
-            <img src='./bgImage2.png' className='rounded-lg descriptionBox' />
+          <div className='hidden md:grid md:grid-cols-2 gap-2'>
+            <DescriptionBox label={'EMISSION'} description={'release of harmful pollutants from vehicles, improving air quality and reducing the environmental impact of transportation.'} className='row-start-1'/>
+            <DescriptionBox label={'POWER'} description={'Decreases fuel consumption, allowing for more efficient use of energy, while simultaneously boosting engine power'} />
+            <DescriptionBox label={'LIFE'} description={'Improves the longevity and durability of the catalytic converter, extending its functional lifespan and ensuring optimal performance in reducing harmful emissions over time.'} />
+            <DescriptionBox label={'RECOVERING'} description={'Restores the catalytic converters efficiency, rejuvenating its ability to effectively break down harmful pollutants and maintain optimal performance'} />
+            <DescriptionBox label={'QUICK CLEAN'} description={'Quickly cleans the harmful chemicals such as: Sulphur, Carbon Phosphorus from the surface of catalytic converter'}  className='col-start-1 col-end-3'/>
+            <DescriptionBox label={'EFFECTIVE'} description={'A more affordable option than replacing the catalytic converter, providing long-term value for car owners.'}  className='col-start-1 col-end-3'/>
+            <img src='./bgImage2.png' className='rounded-lg descriptionBox col-start-1 col-end-3 h-[100%]' />
+          </div>
+
+          <div className='md:hidden flex flex-col justify-between '>
+            <DescriptionBoxSmall label={'QUICK CLEAN'} description={'Quickly cleans the harmful chemicals such as: Sulphur, Carbon Phosphorus from the surface of catalytic converter'}/>
+            <DescriptionBoxSmall label={'RECOVERING'} description={'Recovers the activity of catalytic converter'}/>
+            <DescriptionBoxSmall label={'EMISSION'} description={'Reduces the vehicles harmful emission'}/>
+            <DescriptionBoxSmall label={'POWER'} description={'Reduces the fuel consumption and increases power'}/>
+            <DescriptionBoxSmall label={'CATALYTIC LIFE'} description={'Enhances the tendency of catalytic life'}/>
+            <DescriptionBoxSmall label={'COST EFFECTIVE'} description={'A more affordable option than replacing the catalytic converter'}/>
+            <img src='./bgImage2.png' className=' rounded-lg descriptionBox'/>
           </div>
         </div>
 
@@ -110,5 +122,4 @@ function Layout4() {
     </div>
   );
 }
-
-export default Layout4;
+export default Layout;
