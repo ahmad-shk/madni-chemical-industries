@@ -5,6 +5,9 @@
 variables
 bg-[#e2e2e2]
 */
+*{
+  font-family: inter,poppins;
+}
 .list{
   list-style: none;
   color: #e2e2e2;

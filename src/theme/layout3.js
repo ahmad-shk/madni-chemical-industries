@@ -68,7 +68,7 @@ function Layout3() {
         </div>
 
 
-        <div className=' max-w-[70%] min-w-[300px] m-auto py-6 flex flex-col gap-6'>
+        <div className=' max-w-[70%] min-w-[300px] m-auto py-6 flex flex-col gap-1'>
              <UsageBoxes label={1} usage={'Shake well before use'}/>
              <UsageBoxes label={2} usage={'Pour the chemical in the catalytic converter placed in the silencer'}/>
              <UsageBoxes label={3} usage={'Wait for 5 tp 7 minutes'}/>
