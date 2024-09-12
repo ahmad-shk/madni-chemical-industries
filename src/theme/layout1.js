@@ -32,7 +32,7 @@ function Layout1() {
         {/* Navbar */}
         <div className="navbar p-6">
           <div className="nav flex justify-between items-center">
-            <button className="logo"><img src="./logo.jpeg" alt="Logo" /></button>
+            <button className="logo flex justify-center items-center border-2 border-[#9e9e9e]"><img src="./logo.jpeg" alt="Logo" /></button>
             <div className="relative text-[black]">
               <button onClick={handleMenuClick} className="list h-[20px] w-[20px]">
                 <img src="./bars.svg" className="h-full w-full" alt="Menu" />
@@ -79,10 +79,9 @@ function Layout1() {
         </div>
         <div className='footer pt-[3px] text-white'>
           <div className='footer-cont p-[10%] py-8 bg-[#343434] grid gap-8 justify-center items-center grid-cols-1 md:grid-cols-[repeat(3,1fr)]'>
-            <div className='foot-section1 w-full -bg-red-50 flex justify-center'>
-              <button className='logo w-full'>
-                <img src='./logo.jpeg' />
-              </button>
+          <div className='foot-section1 w-full -bg-red-50 flex flex-col justify-center items-center gap-4'>
+            <button className="logo flex justify-center items-center border-2 border-[#9e9e9e]"><img src="./logo.jpeg" alt="Logo" /></button>
+            <label>MADNI CHEMICAL INDUSTRIES</label>
             </div>
             <div className='foot-section2 [&>*]:py-2 [&>*]:flex [&>*]:gap-2 [&>*]:justify-center '>
               <div className=''>

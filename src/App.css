@@ -74,7 +74,7 @@ bg-[#e2e2e2]
   /* animation-range: entery 0% cover 10%; */
 }
 
-@keyframes appear{
+/* @keyframes appear{
   0%{
   
   }
@@ -86,4 +86,4 @@ bg-[#e2e2e2]
     opacity: 1;
     transform: scale(1);
   }
-}
+} */
